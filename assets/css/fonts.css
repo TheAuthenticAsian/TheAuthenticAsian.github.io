@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Neucha&family=Slabo+27px&family=Source+Sans+Pro:wght@900&display=swap");
+
+@font-face {
+    font-family: "neuemedium";
+    src: url("../fonts/helveticaneue_medium-webfont.woff2") format("woff2"),
+        url("../fonts/helveticaneue_medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue";
+    src: url("../fonts/helveticaneue-webfont.woff2") format("woff2"),
+        url("../fonts/helveticaneue-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

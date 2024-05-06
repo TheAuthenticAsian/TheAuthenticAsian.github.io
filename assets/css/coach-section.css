@@ -1,0 +1,87 @@
+.coach-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Make h1 have the full width*/
+.coach-section h1 {
+    flex: 100%;
+}
+
+/*Each card*/
+
+.coach-section article {
+    display: block;
+    overflow: auto;
+    width: 80%;
+    margin: var(--default-margin);
+    padding: var(--default-margin);
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color-border);
+    transition: all 0.15s ease-in-out;
+    text-align: center;
+}
+
+.coach-section article h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: var(--default-margin);
+}
+
+.coach-section article > img {
+    height: 50%;
+    border-radius: 100%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+}
+
+.coach-section article > p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: var(--default-margin);
+}
+
+/* Card hover animation */
+.coach-section article:hover {
+    transform: scale(1.02);
+}
+
+.coach-section article:hover img {
+    border-radius: 25px;
+}
+
+/* Medium Screen */
+@media screen and (min-width: 768px) {
+    .coach-section {
+        flex-direction: row;
+    }
+
+    .coach-section article {
+        flex-basis: 40%;
+    }
+
+    .coach-section article > img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .coach-section article {
+        flex-basis: 25%;
+    }
+
+    .coach-section article > img {
+        width: 50%;
+    }
+
+    .coach-section article > p {
+        font-size: 18px;
+    }
+}

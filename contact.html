@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/fonts.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/form.css" />
+        <script src="assets/js/main.js" defer></script>
+        <title>SRHS Badminton Home Page</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="home.html">
+                <span id="brand-logo">
+                    <img
+                        src="assets/imgs/SRHS_Logo.png"
+                        alt="Santa Rosa High School logo"
+                        width="50"
+                        height="50"
+                    />
+                    <span>SRHS&nbsp;</span>
+                    <span>Badminton</span>
+                </span>
+            </a>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <input type="checkbox" class="toggle" id="toggle1" />
+                        <label for="toggle1" class="open">+</label>
+                        <ul>
+                            <li>
+                                <a href="information.html#joining-team"
+                                    >Joining The Team</a
+                                >
+                            </li>
+                            <li>
+                                <a href="information.html#srhs-badminton-info"
+                                    >The SRHS Team</a
+                                >
+                            </li>
+                            <li>
+                                <a href="information.html#badminton-info"
+                                    >Badminton Information</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="coaches.html">Coaches</a></li>
+                </ul>
+            </nav>
+            <a class="current-page" href="contact.html" id="contact-link"
+                >Contact</a
+            >
+            <p id="menu-button">&#9776;</p>
+        </header>
+        <main>
+            <div class="margin-space"></div>
+            <section class="form-container">
+                <h1>Contact Us</h1>
+                <div>
+                    Use this form to contact us. If there is any problems with
+                    this website feel free to email:
+                    <a href="mailto:prasen1265@gmail.com">
+                        prasen1265@gmail.com
+                    </a>
+                </div>
+
+                <form action="https://formspree.io/f/mbjbrkdn" method="POST">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <div>
+                            <label for="full_name">Full Name:</label>
+                            <input
+                                type="text"
+                                name="full_name"
+                                id="full_name"
+                                placeholder="Name"
+                            />
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                            />
+                        </div>
+                        <div>Are you on the badminton team?:</div>
+                        <div>
+                            <input
+                                name="team_member"
+                                id="yes-member"
+                                type="radio"
+                                value="yes"
+                            />
+                            <label for="yes-member">Yes</label>
+                            <input
+                                name="team_member"
+                                id="no-member"
+                                type="radio"
+                                value="no"
+                            /><label for="no-member">No</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <div>
+                            <label for="contact-subject"
+                                >Reason For Contact:</label
+                            >
+                            <select name="contact-subject" id="contact-subject">
+                                <option value="joining-team">
+                                    Joining the Team
+                                </option>
+                                <option value="badminton-info">
+                                    Badminton Info
+                                </option>
+                                <option value="schedule">Schedule</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            Select the coach/coaches you would like to direct
+                            this message to:
+                            <div class="coach-container">
+                                <div>
+                                    <input
+                                        id="brett"
+                                        name="message_for"
+                                        value="Brett"
+                                        type="checkbox"
+                                    />
+                                    <label for="brett">Brett</label>
+                                </div>
+                                <div>
+                                    <input
+                                        id="tenjing"
+                                        value="Tenjing"
+                                        name="message_for"
+                                        type="checkbox"
+                                    />
+                                    <label for="tenjing">Tenjing</label>
+                                </div>
+                                <div>
+                                    <input
+                                        id="alex"
+                                        value="Alex"
+                                        name="message_for"
+                                        type="checkbox"
+                                    />
+                                    <label for="alex">Alex</label>
+                                </div>
+                                <div>
+                                    <input
+                                        id="tommy"
+                                        value="Tommy"
+                                        name="message_for"
+                                        type="checkbox"
+                                    />
+                                    <label for="tommy">Tommy</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message">Message:</label> <br />
+                            <textarea
+                                name="message"
+                                id="message"
+                                placeholder="Message"
+                            ></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Submit" />
+                            <input
+                                name="reset"
+                                type="reset"
+                                value="Clear Form"
+                            />
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div>Prasen Shakya &copy; 2022</div>
+        </footer>
+    </body>
+</html>

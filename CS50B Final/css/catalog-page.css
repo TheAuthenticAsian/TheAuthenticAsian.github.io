@@ -1,0 +1,65 @@
+/*Mobile Home Page*/
+.background-image {
+    background-image: url("../images/catalog/background-mobile.png");
+}
+
+img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.player-holder {
+    pointer-events: none;
+    transition: all 0.25s;
+}
+
+.player-holder:hover>* {
+    filter: grayscale(1);
+}
+
+.player-holder div {
+    max-width: 300px;
+    transition: all 0.25s;
+    pointer-events: none;
+    filter: grayscale(0);
+
+}
+
+.player-holder div:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.player-holder div img {
+    pointer-events: auto;
+
+}
+
+
+.player-holder div p {
+    font-size: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 15px !important;
+}
+
+
+
+/* Small Screens And Above*/
+@media (min-width: 768px) {
+    .background-image {
+        background-image: url("../images/catalog/background-desktop.png");
+    }
+
+    .player-holder div p {
+        font-size: 20px;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 30px !important;
+    }
+
+}

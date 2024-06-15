@@ -1,0 +1,86 @@
+/* Load In Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Aoboshi+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Typography */
+h1,
+h2,
+p {
+    color: white;
+}
+
+h1,
+h2 {
+    font-family: "Anton";
+    font-size: 40px;
+}
+
+p {
+    font-family: "Nunito Sans";
+}
+
+/* Utility Classes */
+.blurred-image {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3F3F3F;
+    opacity: 0.5;
+}
+
+.stroked-text {
+    -webkit-text-stroke: 1px white;
+    color: rgba(0, 0, 0, 0);
+}
+
+/* Background Set Up */
+.background-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    font-family: "Aoboshi One", Helvetica;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+
+/* Large And Above*/
+@media (min-width: 768px) {
+
+    h1,
+    h2 {
+        font-family: "Anton";
+        font-size: 100px;
+    }
+
+    /* Nav Bar*/
+    .navbar {
+        font-size: 20px;
+    }
+
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+}

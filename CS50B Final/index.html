@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home-page.css">
+
+</head>
+
+<body>
+    <div class="background-container background-image">
+        <div class="blurred-image"></div>
+        <div class="dark-overlay"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark align-bottom mb-5 ">
+        <div class="container-fluid px-5 align-items-end ">
+            <a class="navbar-brand " href="index.html">ShuttleStars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="catalog.html">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="about.html">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="fs-2">Welcome!</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Welcome to my website! This is a catalog website that is made for the CS50B midterm project!
+                    <br><br>
+                    I hope that you enjoy exploring the website!
+                </div>
+                <div class="modal-footer p-1 ">
+                    <button type="button" class="btn btn-secondary modal-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="main-text col-12 mb-5 col-lg-6 mb-lg-0">
+                <h1>MEET THE</h1>
+                <h1 class="stroked-text">BADMINTON STARS</h1>
+                <div class="main-text-wrapper">
+                    <p>Interested in learning about the top badminton players?<br> Get to know the badminton stars, from
+                        their biography, performance on court, to their rankings and
+                        more. </p>
+                    <a class="button" href="catalog.html"> VIEW THE PLAYER LIST <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="currentColor" class="bi bi-box-arrow-up-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                            <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 text-center ">
+                <img src="images/home/hero-image.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/texttyleF.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#exampleModal').modal('show');
+            $(".stroked-text").css("color", "#ffffff");
+        })
+
+        $('#exampleModal').on('hide.bs.modal', function (e) {
+            $(".stroked-text").textyleF({
+                delay: 50,
+                duration: 100,
+                easing: "cubic-bezier(0.785, 0.135, 0.15, 0.86)",
+                callback: function () {
+                    $(this).css({
+                        color: "#ffffff00",
+                        transition: "1s",
+                    });
+                    $(".desc").css("opacity", 1);
+                },
+            });
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

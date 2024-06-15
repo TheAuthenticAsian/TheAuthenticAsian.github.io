@@ -1,0 +1,42 @@
+.background-image {
+    background-color: black;
+}
+
+.accordion-item {
+    background-color: transparent;
+    color: white;
+}
+
+.accordion-button {
+    font-family: "Nunito Sans" !important;
+
+}
+
+.carousel-inner>.carousel-item>img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    color: black !important;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Small Screens And Above*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    .carousel-inner>.carousel-item>img {
+        height: 700px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+
+}

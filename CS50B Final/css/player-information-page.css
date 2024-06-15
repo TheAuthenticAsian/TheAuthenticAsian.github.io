@@ -1,0 +1,92 @@
+h2,
+h3 {
+    font-family: "Antonio";
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.background-image {
+    background-color: black;
+}
+
+/* Player Profile */
+
+.player-banner-container {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgb(63, 63, 63, 0.5), rgb(63, 63, 63, 0.5)), var(--mobile-image);
+}
+
+.player-profile-container img {
+    border-radius: 100%;
+
+}
+
+.profile-image {
+    border: white solid 5px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.country-image {
+    border: white solid 3px;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+
+.player-ranking h3 {
+    font-size: 15px;
+}
+
+/* Small Screens And Above*/
+@media (min-width: 768px) {
+    h2 {
+        font-size: 55px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .player-banner-container {
+        background-image: linear-gradient(0deg, rgb(63, 63, 63, 0.5), rgb(63, 63, 63, 0.5)), var(--desktop-image);
+        background-size: 100%;
+
+    }
+
+    .profile-image {
+        border: white solid 5px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .country-image {
+        border: white solid 5px;
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+
+    .player-ranking h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+}

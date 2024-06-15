@@ -1,0 +1,60 @@
+/*Mobile Home Page*/
+
+.background-image {
+    background-image: url("../images/home/background-mobile.png");
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 750px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    font-family: "Antonio";
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.25s;
+}
+
+.button:hover {
+    transform: scale(1.01);
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Small Screens And Above*/
+@media (min-width: 768px) {
+    .background-image {
+        background-image: url("../images/home/background-desktop.png");
+    }
+
+    .button {
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+    }
+
+
+    p {
+        font-size: 30px;
+
+    }
+
+
+}
